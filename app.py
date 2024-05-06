@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM,T5Tokenizer, T5ForConditionalGeneration
 
 # Load the model and tokenizer
-model = AutoModelForSeq2SeqLM.from_pretrained("MIIB-NLP/Arabic-question-generation")
+model = AutoModelForSeq2SeqLM.from_pretrained("QGenie/QGenie-Arabic-Question-Generation")
 tokenizer = AutoTokenizer.from_pretrained("MIIB-NLP/Arabic-question-generation")
 
 tokenizer_english = T5Tokenizer.from_pretrained('ZhangCheng/T5-Base-Fine-Tuned-for-Question-Generation')
